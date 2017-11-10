@@ -78,7 +78,8 @@ ngx_module_t ngx_server_name_change_module = {
     NGX_MODULE_V1,
     &ngx_server_name_change_module_ctx, /* module context */
     ngx_server_name_change_commands, /* module directives */
-    NGX_HTTP_MODULE, /* module type */
+    NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_CONF_TAKE2|NGX_CONF_2MORE,
+ /* module type */
     NULL, /* init master */
     NULL, /* init module */
     NULL, /* init process */
@@ -126,7 +127,8 @@ static ngx_int_t ngx_server_modify_hostname(ngx_http_request_t *r)
 //    ngx_log_debug(1,host_end);
     const char *l = "localhost";
      ngx_log_debug(NGX_LOG_DEBUG,log,"rmofrfrformformformfromfromfromfrofmrmfromfromfmrofmrmfrofmrofmrofmromfrmofrmformPos = %s",l);
-     r->host_start = (u_char)l;
+     ngx_log_debug(NGX_LOG_DEBUG,log,"rmofrfrformformformfromfromfromfrofmrmfromfromfmrofmrmfrofmrofmrofmromfrmofrmformPos = %s",l);
+//     r->host_start = (u_char)l;
 
 
     /* Insertion in the buffer chain. */
