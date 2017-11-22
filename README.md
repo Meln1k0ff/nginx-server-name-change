@@ -1,4 +1,6 @@
 # Hello World Module for Nginx
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPavel-Melnikov%2Fnginx-server-name-change.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FPavel-Melnikov%2Fnginx-server-name-change?ref=badge_shield)
+
 
 ## Introduction
 
@@ -71,3 +73,7 @@ document his journey on Nginx module development.
  3. Document everything with
     [Doxygen](https://secure.wikimedia.org/wikipedia/en/wiki/Doxygen)
     linking the relevant header and source files from the Nginx core.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FPavel-Melnikov%2Fnginx-server-name-change.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FPavel-Melnikov%2Fnginx-server-name-change?ref=badge_large)
